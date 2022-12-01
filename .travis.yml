@@ -9,6 +9,7 @@ before_script:
 - source prepare-conda-env.sh
 
 script:
+- pylint *.py
 - pytest tutorial_example_1.py
 - pytest tutorial_example_2.py
 - pytest tutorial_example_3.py
