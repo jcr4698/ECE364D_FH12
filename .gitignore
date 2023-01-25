@@ -1,2 +1,4 @@
 __pycache__
+.pytest_cashe
+miniconda
 .DS_Store

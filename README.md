@@ -264,4 +264,3 @@ write those comments below. We appreciate your feedback.
 After you finish all the tasks, please compress the folder using
 `./package.sh` to get `userstudy.zip`, and send it via email to 
 Yuki Liu <yuki.liu@utexas.edu>
-# ECE364D_FH12
