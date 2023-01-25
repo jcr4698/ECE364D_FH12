@@ -7,14 +7,17 @@ import sys
 import re
 from inline import Here
 
+# purpose: test regex-based implementation of the split method 
+
+# simulate input
 input_list = sys.argv[1:]
 
-# String to "tokenize"
+# text to "tokenize"
 txt = "Have you anything ever had a dream that you, um, you had, your, you- you could, " \
     "you’ll do, you- you wants, you, you could do so, you- you’ll do, you could- " \
     "you, you want, you want him to do you so much you could do anything?"
 
-# parse string
+# parse this text
 res = re.findall(r"[- ’A-Za-z]*,|[- ’A-Za-z]*\?", txt)
 idx = 0
 for tok in res:
@@ -22,7 +25,7 @@ for tok in res:
 	res[idx] = tok
 	idx += 1
 
-# answer
+# expected answer
 ans = txt.split(",")
 
 # verify
